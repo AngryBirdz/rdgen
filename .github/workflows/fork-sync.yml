@@ -13,7 +13,9 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v2.0
         with:
+          token: ${{ secrets.FORK_SYNC }}
           owner: AngryBirdz
           repo: rdgen
           base: master
           head: master
+          auto_approve: true
